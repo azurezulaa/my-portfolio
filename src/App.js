@@ -1,11 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { SocialIcon } from "react-social-icons";
+import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <motion.div
+          initial={{ x: -1500 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2 }}
+        >
+          <SocialIcon network="twitter" />
+          <Typewriter words={["sainuu", "pinecone"]} loop={false} />
+        </motion.div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
