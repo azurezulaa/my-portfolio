@@ -1,33 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { SocialIcon } from "react-social-icons";
-import { Typewriter } from "react-simple-typewriter";
-import { motion } from "framer-motion";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Project from "./components/Project/Project";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <motion.div
-          initial={{ x: -1500 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 2 }}
-        >
-          <SocialIcon network="twitter" />
-          <Typewriter words={["sainuu", "pinecone"]} loop={false} />
-        </motion.div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Project />
+      <Contact />
     </div>
   );
 }
