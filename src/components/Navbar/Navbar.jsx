@@ -1,13 +1,14 @@
 import React from "react";
-import styles from "./navbar.module.scss";
+import styles from "./navbar.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
 const NavbarItem = () => {
   return (
     <div>
       <Navbar
-        style={{ zIndex: 1000 }}
+        style={{ zIndex: 2000 }}
         collapseOnSelect
         expand="lg"
         bg="dark"
@@ -16,15 +17,11 @@ const NavbarItem = () => {
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
+            <Link to="/about">About</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
