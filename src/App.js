@@ -12,7 +12,7 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div>vfcg
         <Navbar />
         <Routes>
           <Route path="/" exact={true} element={<Hero />} />
