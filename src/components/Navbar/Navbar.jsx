@@ -18,6 +18,7 @@ const NavbarItem = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
+            <Link to="/">HOME</Link>
             <Link to="/about">About</Link>
             <Link to="/skills">Skills</Link>
             <Link to="/projects">Projects</Link>

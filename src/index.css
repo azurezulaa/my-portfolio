@@ -55,6 +55,7 @@ h1 {
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 section > h2,
 section > h5 {
@@ -100,6 +101,40 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+.socials {
+  position: sticky;
+  left: 0;
+  bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 2rem;
+  font-size: 28px;
+}
+.socials a:hover {
+  animation: social 1s infinite linear;
+  scale: 1.2;
+  color: var(--color-primary);
+}
+#light .socials a:hover {
+  color: #0079d0;
+}
+
+@keyframes social {
+  25% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+input#day-night:checked + .social:hover {
+  color: #1f1f38;
 }
 
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ============== */

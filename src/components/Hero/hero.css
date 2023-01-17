@@ -16,7 +16,7 @@
 }
 
 .content {
-  --frame: #070b32;
+  /* --frame: #070b32;
   --bush: #181b38;
   --dot1: radial-gradient(
     circle at 50% 50%,
@@ -32,13 +32,13 @@
     circle at 50% 50%,
     var(--bush) 0 1.15vmin,
     #fff0 calc(1.15vmin + 1px) 100%
-  );
-  --glass: 337deg;
+  ); */
+  --glass: 337deg; /*
   --luz1: hsl(var(--glass) 60% 50% / 60%);
   --luz2: hsl(var(--glass) 54% 32%);
   --luz3: hsl(var(--glass) 54% 25%);
-  transition: --glass 3s;
-  width: 80vmin;
+  transition: --glass 3s; */
+  /* width: 80vmin; */
   height: 100vh;
   display: flex;
   align-items: flex-end;
@@ -73,9 +73,9 @@
   background-repeat: no-repeat;
   background-size: 100% 300%;
   background-position: 0% 10%;
-  transform: translateZ(-100vmin);
-  transition: all 3s var(--cbz) 0s;
-  animation: start-bg 3s var(--cbz) 0s 1;
+  /* transform: translateZ(-100vmin); */
+  transition: all 3s 0s;
+  animation: start-bg 3s 0s 1;
 }
 
 .content:after {
@@ -96,20 +96,20 @@
     35.33% 27.33%, 22.33% 39.33%, 20.33% 44.33%, 33.33% 56.33%;
   filter: drop-shadow(0px 0px 2px #fff) drop-shadow(0px 0px 5px #fff);
   background-position: -8% -10%;
-  transform: translateZ(-100vmin);
-  /* transition: all 3s var(--cbz) 0s; */
+  /* transform: translateZ(-100vmin); */
+  transition: all 3s 0s;
   top: -16vmin;
-  animation: start-stars 3s var(--cbz) 0s 1;
+  animation: start-stars 3s 0s 1;
 }
 
 input#day-night:checked ~ .content:before {
   background-position: 0% 90%;
-  transition: all 3s var(--cbz) 0s;
+  transition: all 3s 0s;
 }
 
 input#day-night:checked ~ .content:after {
   top: -100%;
-  transition: all 3s var(--cbz) 0s;
+  transition: all 3s 0s;
 }
 
 @keyframes start-stars {
@@ -264,7 +264,7 @@ label:after {
   border-radius: 100%;
   left: -0.95vmin;
   top: -1.1vmin;
-  /* transition: all 1s var(--cbz) 0s; */
+  transition: all 1s var(--cbz) 0s;
   border: 0.5vmin solid #fffc;
   box-shadow: 0 0 1vmin 0 #fffc, 0 0 1vmin 0 #fffc inset;
 }
@@ -321,8 +321,8 @@ input#day-night:checked + label:after {
     radial-gradient(ellipse at 95% 25%, #fff1 -2vmin, #fff0 9vmin),
     radial-gradient(ellipse at 98% 26%, #fff1 -2vmin, #fff0 9vmin),
     radial-gradient(ellipse at 90% 23%, #fff1 -2vmin, #fff0 9vmin);
-  transform: translateZ(-100vmin);
-  transition: all 3s var(--cbz) 0s;
+  /* transform: translateZ(-100vmin); */
+  transition: all 3s 0s;
   opacity: 0.6;
 }
 
@@ -332,7 +332,7 @@ input#day-night:checked + label:after {
 
 input#day-night:checked ~ .content .clouds {
   top: -10vh;
-  transition: all 3s var(--cbz) 0s;
+  transition: all 3s 0s;
   opacity: 1;
   filter: drop-shadow(1vmin -1vmin 1vmin #fff)
     drop-shadow(-1vmin 1vmin 5vmin #fff) drop-shadow(20vmin 5vmin 5vmin #fff)
@@ -342,4 +342,10 @@ input#day-night:checked ~ .content .clouds {
 input#day-night:checked ~ .content {
   transition: --glass 3s;
   --glass: 200deg;
+}
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
 }
