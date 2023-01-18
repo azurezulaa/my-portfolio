@@ -349,3 +349,22 @@ input#day-night:checked ~ .content {
   display: flex;
   gap: 1.2rem;
 }
+.hero-btn-download {
+  border: 1px solid var(--color-primary);
+  color: rgb(176, 232, 251);
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 4px rgb(39, 68, 232);
+  text-shadow: 0 0 5px rgb(39, 68, 232);
+}
+.hero-btn-contact {
+  border: 1px solid rgb(39, 68, 232);
+  color: rgb(176, 232, 251);
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 4px rgb(39, 68, 232);
+  text-shadow: 0 0 5px rgb(39, 68, 232);
+  background-color: rgb(39, 68, 232);
+}

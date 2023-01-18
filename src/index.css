@@ -9,18 +9,31 @@
   text-decoration: none;
 }
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
-
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+}
+#light .socials a:hover {
+  color: #0079d0;
+}
+#light {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #5252cf;
+  --color-primary: #2696e6;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgb(174, 173, 173);
+}
+#dark {
+  --color-bg: #6767cd;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgb(199, 199, 199);
+  background-color: #1f1f38;
 }
 html {
   scroll-behavior: smooth;
@@ -94,8 +107,9 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  background-color: var(--color-bg-variant) !important;
+  color: var(--color-light) !important;
+  border: none !important;
 }
 img {
   display: block;
@@ -104,9 +118,11 @@ img {
 }
 
 .socials {
+  background-color: black;
+  height: 0px;
   position: sticky;
   left: 0;
-  bottom: 3rem;
+  bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -116,10 +132,6 @@ img {
 .socials a:hover {
   animation: social 1s infinite linear;
   scale: 1.2;
-  color: var(--color-primary);
-}
-#light .socials a:hover {
-  color: #0079d0;
 }
 
 @keyframes social {

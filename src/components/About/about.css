@@ -1,11 +1,14 @@
 .about_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 .about_me {
   width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
+  border-radius: 40%;
+  background-color: white;
 }
 .about_me img {
   animation: hi 1.5s infinite linear;
@@ -44,6 +47,9 @@
   background: transparent;
   border-color: var(--color-primary-variant);
 }
+.h {
+  color: var(--color-bg);
+}
 .about_icon {
   color: var(--color-primary);
   font-size: 1.5rem;
@@ -56,7 +62,7 @@
   font-size: 0.7rem;
   color: var(--color-light);
 }
-.about-content p {
-  margin: 2rem;
+#aboutp {
+  margin: 50px;
   color: var(--color-light);
 }

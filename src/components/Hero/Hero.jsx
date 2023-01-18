@@ -7,7 +7,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { loadSnowPreset } from "tsparticles-preset-snow";
 
-const Hero = ({ change }) => {
+const Hero = ({ change, theme }) => {
   return (
     <div className="hero">
       <div style={{ zIndex: "2000", position: "absolute", top: "40%" }}>
@@ -16,7 +16,12 @@ const Hero = ({ change }) => {
         <h5 className="text-light">Fullstack Developer</h5>
         <CTA />
       </div>
-      <input onChange={change} type="checkbox" id="day-night" />
+      <input
+        onChange={change}
+        checked={theme === "light" ? true : false}
+        type="checkbox"
+        id="day-night"
+      />
       <label for="day-night"></label>
       <div class="content">
         <div class="moon-sun"></div>

@@ -15,21 +15,21 @@ const About = () => {
           <div className="about_cards">
             <article className="about_card">
               <MdWorkOutline className="about_icon" />
-              <h5>Experience</h5>
+              <h5 className="h">Experience</h5>
               <small>+ Years Working</small>
             </article>
             <article className="about_card">
               <FiUsers className="about_icon" />
-              <h5>Clients</h5>
+              <h5 className="h">Clients</h5>
               <small>Worldwide</small>
             </article>
             <article className="about_card">
               <VscProject className="about_icon" />
-              <h5>Experience</h5>
+              <h5 className="h">Experience</h5>
               <small>10+ Completed</small>
             </article>
           </div>
-          <p>
+          <p id="aboutp">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
             deserunt placeat tenetur cumque ab consequuntur soluta eligendi,
             nisi ad velit possimus non dolore debitis voluptas reprehenderit est

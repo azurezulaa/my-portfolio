@@ -7,15 +7,9 @@ import { Link } from "react-router-dom";
 const NavbarItem = () => {
   return (
     <div>
-      <Navbar
-        style={{ zIndex: 2000 }}
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-      >
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Navbar.Brand>Zulaa</Navbar.Brand>
+        <Navbar.Toggle />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
             <Link to="/">HOME</Link>

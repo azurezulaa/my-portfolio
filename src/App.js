@@ -22,7 +22,11 @@ function App() {
       <div id={theme}>
         <Navbar />
         <Routes>
-          <Route path="/" exact={true} element={<Hero change={change} />} />
+          <Route
+            path="/"
+            exact={true}
+            element={<Hero theme={theme} change={change} />}
+          />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Project />} />
