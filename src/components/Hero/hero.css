@@ -345,18 +345,20 @@ input#day-night:checked ~ .content {
 }
 
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 12rem;
   display: flex;
   gap: 1.2rem;
+  width: 300px;
 }
+
 .hero-btn-download {
   border: 1px solid var(--color-primary);
   color: rgb(176, 232, 251);
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
-  box-shadow: 0 0 4px rgb(39, 68, 232);
   text-shadow: 0 0 5px rgb(39, 68, 232);
+  animation: btn-d 0.8s 3.5s infinite alternate;
 }
 .hero-btn-contact {
   border: 1px solid rgb(39, 68, 232);
@@ -364,7 +366,92 @@ input#day-night:checked ~ .content {
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
-  box-shadow: 0 0 4px rgb(39, 68, 232);
   text-shadow: 0 0 5px rgb(39, 68, 232);
   background-color: rgb(39, 68, 232);
+  animation: btn-c 0.8s 3.5s infinite alternate;
 }
+@keyframes btn-c {
+  to {
+    box-shadow: 0 0 10px rgb(39, 68, 232);
+  }
+}
+@keyframes btn-d {
+  to {
+    box-shadow: 0 0 8px rgb(39, 68, 232);
+  }
+}
+.hero-cont p {
+  font-size: 60px;
+  display: inline-block;
+  font-family: "Rubik Gemstones", cursive;
+  color: #ccc;
+  position: absolute;
+}
+.hello {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  color: #ccc;
+}
+.text-light {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  opacity: 0;
+  animation: text 3s 3.5s forwards;
+}
+@keyframes text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#z {
+  animation: z 2s;
+  top: 0;
+  left: 0;
+}
+#u {
+  animation: u 2s;
+  top: 0;
+  left: 45px;
+}
+#l {
+  animation: l 2s;
+  top: 0;
+  left: 90px;
+}
+#a {
+  animation: a 2s;
+  top: 0;
+  left: 135px;
+}
+
+@keyframes z {
+  from {
+    top: -500px;
+    left: 0;
+  }
+}
+@keyframes u {
+  from {
+    top: 0;
+    left: -500px;
+  }
+}
+@keyframes l {
+  from {
+    top: 0;
+    left: 1000px;
+  }
+}
+@keyframes a {
+  from {
+    top: -800px;
+    left: 0;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap");

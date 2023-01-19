@@ -10,9 +10,15 @@ import { loadSnowPreset } from "tsparticles-preset-snow";
 const Hero = ({ change, theme }) => {
   return (
     <div className="hero">
-      <div style={{ zIndex: "2000", position: "absolute", top: "40%" }}>
-        <h5>Hello I'm</h5>
-        <h1>Zulaa</h1>
+      <div
+        className="hero-cont"
+        style={{ zIndex: "2000", position: "absolute", top: "40%" }}
+      >
+        <h5 className="hello">Hello I'm</h5>
+        <p id="z">Z</p>
+        <p id="u">U</p>
+        <p id="l">L</p>
+        <p id="a">AA</p>
         <h5 className="text-light">Fullstack Developer</h5>
         <CTA />
       </div>

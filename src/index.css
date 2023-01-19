@@ -16,7 +16,10 @@
   --container-width-sm: 90%;
 }
 #light .socials a:hover {
-  color: #0079d0;
+  color: #2592ff;
+}
+#dark .socials a:hover {
+  color: #558de1;
 }
 #light {
   --color-bg: #1f1f38;
